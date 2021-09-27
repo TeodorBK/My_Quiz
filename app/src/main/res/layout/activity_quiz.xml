@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity"
+    android:background="@mipmap/bg">
+
+    <TextView
+        android:id="@+id/antallSpørsmål"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/antallSpørsmål"
+        android:layout_marginTop="100dp"
+        android:layout_marginHorizontal="15dp"
+        android:gravity="center"
+        android:text="Er 'Crocodile Rock' en Elton Johnlåt?"
+        android:textColor="@color/white"
+        android:id="@+id/questions"
+        android:textSize="30sp"/>
+
+    <LinearLayout
+        android:id="@+id/svarContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questions"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="20sp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/svarNr1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:paddingHorizontal="50dp"
+            android:paddingVertical="7dp"
+            android:backgroundTint="#007700"
+            android:text="Fakta"
+            android:textAllCaps="false"
+            android:textSize="23sp" />
+
+        <Button
+            android:id="@+id/svarNr2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingHorizontal="50sp"
+            android:paddingVertical="7dp"
+            android:backgroundTint="#ee0000"
+            android:text="Fleip"
+            android:textAllCaps="false"
+            android:textSize="23sp" />
+    </LinearLayout>
+
+</RelativeLayout>
