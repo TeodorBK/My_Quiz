@@ -18,7 +18,7 @@ class QuizFerdigActivityTest {
     var activityRule: ActivityScenarioRule<MainActivity> = ActivityScenarioRule(MainActivity::class.java)
 
     @Test
-    fun verifyMessageSentTy() {
+    fun verifyClosingBtn() {
 
         onView(withId(R.id.exitButton))
             .perform(click())
