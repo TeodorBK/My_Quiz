@@ -9,8 +9,8 @@ import org.junit.runners.JUnit4
 @RunWith(JUnit4::class)
 
 class QuizActivityTest {
-    @Test
 
+    @Test
     fun WhenImportIsValid() {
         val svar = true
         val name = "Tim"
